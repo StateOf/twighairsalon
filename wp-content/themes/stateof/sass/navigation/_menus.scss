@@ -1,0 +1,142 @@
+.site-branding {
+  position: absolute;
+  display:inline-block;
+  margin-left: 3.125em;
+  width: 15%;
+  z-index: 1;                                 // BRINGS LOGO UPFRONT
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.foot-brand {
+  display:inline-block;
+  margin-left: 3.125em;
+  width: 15%;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-right: 1em;
+
+  .custom-logo-link {
+    padding: 1.25em 0.938em 1.25em 0.938em;
+  }
+}
+
+.custom-logo-link {
+  padding: 1.875em 0.938em 2.500em 0.938em;
+}
+
+.main-navigation {
+  position: absolute;
+  z-index: 1;                               // BRINGS LOGO UPFRONT
+  display:inline-block;
+  right: 0em;
+  margin-top: 2.475em;
+
+  ul {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    ul {
+      box-shadow: 0 0.188em 0.188em rgba(0, 0, 0, 0.2);
+      float:right;
+      position: absolute;
+      top: 100%;
+      left: -999em;
+      z-index: 99999;
+
+      ul {
+        left: -999em;
+        top: 0;
+      }
+
+      li {
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+        }
+      }
+
+      a {
+        width: 200em;
+      }
+
+      :hover > a,
+      .focus > a {
+      }
+
+      a:hover,
+      a.focus {
+      }
+    }
+
+    li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+
+  li {
+    font-size: 16px;
+    float:left;
+    position: relative;
+    padding-right:2.188em;
+    margin-right: 0.313em;
+    &:hover {
+      border-bottom:0.063em solid #fff;
+    }
+
+    &:hover > a,
+    &.focus > a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;                 //--THIS IS WHERE I SET IT WHITE
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+  }
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+  .site-main & {
+    margin: 0 0 1.5em;
+    overflow: hidden;
+  }
+
+  .nav-previous {
+    float:right;
+    width: 50%;
+  }
+
+  .nav-next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+}

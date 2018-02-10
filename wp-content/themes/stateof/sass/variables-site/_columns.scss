@@ -1,0 +1,58 @@
+$columns: (
+  1: 100%,
+  2: 50%,
+  3: 33.33%,
+  4: 25%,
+  5: 20%,
+  6: 16.66%,
+  7: 14.28%,
+  8: 12.5%,
+  9: 11.11%
+);
+
+$columns__margin: 0;
+
+.col-1 {
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+
+.col-2 {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.col-6 {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.row {
+  height: auto;
+  width:100%;
+  margin: 0;
+}
+
+.spacer {
+  width: 6%;
+  float: left;
+  margin: 1%;
+}
+
+.spacer1 {
+  width: 1%;
+  float: right;
+  margin: 1%;
+}
+
+.connect {
+  width: 20%;
+  float: left;
+  text-align: center;
+  p {
+    margin-right: 20%;
+  }
+}

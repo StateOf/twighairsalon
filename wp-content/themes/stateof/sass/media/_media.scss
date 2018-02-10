@@ -1,0 +1,207 @@
+// THIS IS WHERE I AM PUTTING THE CSS FOR MOST OF THE HOMEPAGE CARDS & CAPTIONS FROM THE SLIDER
+
+@font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/Avenir-Light-07.ttf") format("truetype")
+}
+
+.contactinfo {
+  font-size: 12px;
+  margin: 2em 0 5em 0;
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+
+.contact.submitbutton {
+  margin-top: 0;
+  float: right;
+  .ninja-forms-field {
+    padding: .75em 3em .75em 3em;
+  }
+}
+
+.textarea-container.contact {
+  margin-bottom: 1%;
+}
+
+.floatingdiv {
+  position: relative;
+  width: 90%;
+  margin: 0 5%;
+}
+
+.floatingtitle {
+  margin-top: -10em;
+  padding: 1.75em 7em;
+  text-align: center;
+  background-color: white;
+
+  .nf-form-fields-required {
+    display: none;
+  }
+  .ninja-forms-req-symbol {
+    display: none;
+  }
+
+  .ninja-forms-field {
+    padding-left: .75em;
+  }
+}
+
+.floatingform {
+  margin: 2em 0;
+}
+
+.floatinggallery {
+  margin: 4.5em 0;
+}
+
+.nf-field-container.submit-container.label-hidden.one-third.submitbutton.textbox-container {
+  margin: .938em 0 0 0;
+}
+
+.submitbutton {
+  margin: .938em 0 0 0;
+
+  input  {
+    color: white;
+    background-color: black;
+    font-size: .750em;
+    height: 4em;
+    border: 0.219em solid white;
+    margin-left: 0;
+    border-radius: 0;
+    padding: .75em 3em .75em 3em;
+  }
+}
+
+.email-input {
+  margin: .938em 0 4.063em 0;
+  padding: 0.15em 1.25em 0.15em .938em;
+  background-color: white;
+
+  .input-style {
+    border: none;
+    font-size: .625em;
+  }
+}
+
+.fb {
+  margin-top: 2.5%;
+  width: 2%;
+}
+
+.ig {
+  margin-top: 2.5%;
+  width: 3%;
+}
+
+.tw {
+  margin-top: 2.5%;
+  width: 3%;
+}
+
+.footercontent {
+  p {
+    color: white;
+    font-family: "Avenir";
+    font-size: .750em;
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 0%;
+  }
+
+  p:first-child {
+    margin: 25% 0 8% 0;
+  }
+  p:last-child {
+    margin: 0 35% 45% 0;
+  }
+}
+
+button {
+
+  p {
+    font-family: Raleway;
+    font-size: 1.125em;
+    color : #FFFFFF;
+    margin: 0;
+  }
+
+  background-color: black;
+  margin: 1.250em;
+  width: 50%;
+}
+
+p {
+  font-family: "Avenir";
+  font-size: 1.125em;
+  color : #000000;
+}
+
+.women {
+  font-size: 1.725em;
+  margin-left:22%;
+  margin-bottom: 22%;
+}
+
+.men {
+  font-size: 1.725em;
+  margin-bottom: 26%;
+  margin-left: 25%;
+}
+
+.waxing {
+  font-size: 1.725em;
+  margin-bottom: 38%;
+  margin-left: 72%;
+}
+
+.ourspace {
+  font-size: 1.725em;
+  margin-bottom: 2%;
+  margin-left: 20%;
+}
+
+.custom-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.ms-image img {
+  height: 62.500em;
+}
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+@import "captions";
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+@import "galleries";
